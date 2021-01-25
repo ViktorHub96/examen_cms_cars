@@ -1,13 +1,12 @@
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
 import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
 
 export const Wrapper = styled.div`
   background-color: ${COLORS.BLACK};
   margin-top: 100px;
 
-  .artist-container {
+  .car-container {
     display: flex;
     margin: 3rem auto;
     width: 90%;
@@ -17,7 +16,7 @@ export const Wrapper = styled.div`
       flex-direction: column;
     }
 
-    .artist-image {
+    .car-image {
       position: relative;
       width: 40vw;
       height: 40vw;
@@ -53,7 +52,7 @@ export const Wrapper = styled.div`
       }
     }
 
-    .artist-info {
+    .car-info {
       display: flex;
       flex-direction: column;
       width: 60vw;
@@ -97,6 +96,24 @@ export const Wrapper = styled.div`
         span:first-child {
           color: ${COLORS.TERTIARY};
         }
+        h5 {
+          font-family: ${FONT_FAMILIES.TITLE};
+          color: ${COLORS.SECONDARY};
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          margin-left: auto;
+          margin-bottom: auto;
+  
+          @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
+            font-size: 0.5rem;
+            margin-right: auto;
+            margin-left: 0;
+            margin-bottom: 1rem;
+          }
+  
+          span:first-child {
+            color: ${COLORS.TERTIARY};
+          }
       }
 
       .description {
@@ -115,7 +132,7 @@ export const Wrapper = styled.div`
     }
   }
 
-  .artist-pictures {
+  .car-pictures {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -125,7 +142,7 @@ export const Wrapper = styled.div`
       flex-direction: column;
     }
 
-    .artist-picture {
+    .car-picture {
       width: 28.5vw;
       height: 57vw;
       margin: 0 1vw;

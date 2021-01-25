@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
+import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../constants"
 
 export const Wrapper = styled.div`
   .banner {
@@ -95,38 +95,8 @@ export const Wrapper = styled.div`
     }
   }
 
-  .contact-info {
-    display: flex;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 2rem;
 
-    @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-      flex-direction: column;
-    }
-
-    div {
-      width: 33.33%;
-      padding: 1em;
-      color: ${COLORS.TERTIARY};
-
-      @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-        width: 100%;
-      }
-
-      p {
-        margin-top: 1rem;
-        color: white;
-
-        a {
-          color: ${COLORS.SECONDARY};
-        }
-      }
-    }
-  }
-
-  .artists {
+  .cars {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +119,7 @@ export const Wrapper = styled.div`
       }
     }
 
-    .artist-items {
+    .car-items {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -160,7 +130,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const Artist = styled(Link)`
+export const Car = styled(Link)`
   display: flex;
   position: relative;
   width: 22vw;
@@ -178,7 +148,7 @@ export const Artist = styled(Link)`
   &:hover {
     transform: scale(1.05);
 
-    .artist-info {
+    .car-info {
       height: 100%;
       background-color: ${COLORS.TERTIARY + "c0"};
 
@@ -188,7 +158,7 @@ export const Artist = styled(Link)`
     }
   }
 
-  .artist-info {
+  .car-info {
     display: flex;
     flex-direction: column;
     position: absolute;
